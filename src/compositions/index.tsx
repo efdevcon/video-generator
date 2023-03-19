@@ -3,6 +3,7 @@ import { Break } from './break'
 import { Intro } from './intro'
 import { Outro } from './outro'
 import { Session } from './session'
+import { Three } from './three'
 
 export function Compositions() {
   return (
@@ -11,6 +12,9 @@ export function Compositions() {
         <Composition id="intro" component={Intro} width={1920} height={1080} durationInFrames={240} fps={30} />
         <Composition id="outro" component={Outro} width={1920} height={1080} durationInFrames={120} fps={30} />
         <Composition id="break" component={Break} width={1920} height={1080} durationInFrames={120} fps={30} />
+      </Folder>
+      <Folder name="Examples">
+        <Composition id="three" component={Three} width={1920} height={1080} durationInFrames={90} fps={30} />
       </Folder>
       <Folder name="Sessions">
         <Composition
